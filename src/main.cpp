@@ -26,6 +26,21 @@ int main() {
         std::cerr << "CreateDB function failed. " << std::endl; 
         return 1; 
     }
+
+    if(addExampleStudents(db)) { 
+        std::cerr << "Unable to add example students. " << std::endl; 
+        return 1; 
+    }
+
+    if(printStudents(db)) { 
+        std::cerr << "Unable to fetch students from table. " << std::endl; 
+        return 1; 
+    }
+
+    if(dropTable(db)) { 
+        std::cerr << "Unable to fetch students from table. " << std::endl; 
+        return 1; 
+    }
     sqlite3_close(db);
 
     return 0; 
