@@ -7,5 +7,5 @@ I chose C++ as it has multiple files (.hpp vs .cpp), that often need adjusted or
 ### Requirements for Running the Code 
 
 - C++ Compiler (GCC, LLDB, etc...)
-- SQLite 
-    - https://www.sqlite.org/download.html
+- SQLite for C/C++
+    - `sudo apt-get install libsqlite3-dev`
